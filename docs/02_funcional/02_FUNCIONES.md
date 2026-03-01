@@ -7,7 +7,7 @@ La plataforma tiene **10 funciones** organizadas en 3 grupos:
 | Grupo | Funciones | Propósito |
 |-------|-----------|-----------|
 | **Core** | REGISTRACIÓN, ENCONTRAR, ACORDAR, EJECUTAR, VERIFICAR, LOGÍSTICA, PAGAR | Flujo operativo día a día |
-| **Habilitación** | APRENDER, COMPLIANCE | Capacitar y formalizar |
+| **Habilitación** | APRENDER, ACOMPAÑAR | Capacitar y formalizar |
 | **Gobernanza** | FISCALIZAR, GOBERNAR | Controlar y mejorar |
 
 ---
@@ -87,17 +87,47 @@ La plataforma tiene **10 funciones** organizadas en 3 grupos:
 
 ## Funciones de Habilitación (2)
 
-### 7. APRENDER
-**Capacitación contextual y continua.**
+### 7. APRENDER (FUNCIÓN CENTRAL en MVP)
+**Capacitación contextual y continua mediante videos curados y RAG acompañante.**
 
-- Catálogo de 50+ cursos
-- Certificados verificables con QR
-- Asistente IA (RAG) para consultas
-- Sugerencias según pantalla actual
+> APRENDER es la función central que mantiene a la comunidad activa y genera valor desde el primer día.
+
+#### Estrategia MVP: YouTube Curado + RAG Acompañante
+
+En lugar de crear contenido desde cero, el MVP utiliza:
+- **Videos curados de YouTube** organizados en colecciones temáticas
+- **RAG como acompañante** que resume, responde dudas y sugiere recursos
+- **Certificados verificables** con QR al completar colecciones
+
+#### 6 Colecciones MVP
+
+| Colección | Videos | Fuente |
+|-----------|--------|--------|
+| Formalización básica | 5-8 | Contadores, ARCA oficial |
+| Monotributo paso a paso | 3-5 | Tutoriales contables |
+| Cálculo de costos | 4-6 | Emprendedores textiles |
+| Negociación con marcas | 3-4 | Videos de negocios |
+| Control de calidad | 5-7 | INTI, escuelas técnicas |
+| **Uso de la plataforma** | 2-3 | **Creamos nosotros** (Loom) |
+
+#### RAG como "Acompañante"
+
+El asistente IA acompaña cada video:
+- Resume el contenido del video
+- Responde preguntas relacionadas
+- Sugiere el siguiente video
+- Conecta con recursos oficiales (ARCA, INTI)
+
+#### Certificados
+
+- PDF descargable con QR verificable
+- Página de verificación pública (`/verificar/[codigo]`)
+- Aparece en perfil público del taller
+- **Impacto en matching:** +5% a +20% según cantidad
 
 **Resuelve:** B6 (Bajas Capacidades)
 
-### 8. COMPLIANCE
+### 8. ACOMPAÑAR (antes COMPLIANCE)
 **Acompañamiento en formalización.**
 
 - Checklist visual de 8 validaciones
@@ -209,19 +239,19 @@ MARCA crea pedido → SISTEMA filtra talleres → SISTEMA rankea → MARCA ve li
 
 ---
 
-## Funciones en MVP (7 de 11)
+## Funciones en MVP (5 de 11)
 
 | Función | En MVP | Notas |
 |---------|--------|-------|
 | **REGISTRACIÓN** | ✅ | Onboarding simple, <5 min, WhatsApp |
 | ENCONTRAR | ✅ | Directorio + búsqueda simple |
-| ACORDAR | ✅ | Contrato digital básico (sin blockchain) |
+| ACORDAR | ❌ | Fase 1 (contrato digital) |
 | EJECUTAR | ❌ | Fase 1 (seguimiento en tiempo real) |
 | VERIFICAR | ❌ | Fase 1 (blockchain, QR) |
 | LOGÍSTICA | ❌ | Fase 1 (hubs) |
-| **PAGAR** | ⚠️ | **Placeholder** - Registro manual, Mercado Pago en Fase 1 |
-| APRENDER | ✅ | Catálogo cursos + certificados PDF |
-| COMPLIANCE | ✅ | Verificación CUIT en AFIP |
+| PAGAR | ❌ | Fuera de MVP - Pagos se gestionan fuera de la plataforma |
+| APRENDER | ✅ | **CENTRAL** - Videos YouTube curados + RAG acompañante + certificados |
+| ACOMPAÑAR | ✅ | Verificación CUIT en AFIP, checklist de formalización |
 | FISCALIZAR | ✅ | Dashboard básico para Estado |
 | GOBERNAR | ❌ | Fase 1 (parametrización avanzada) |
 
@@ -231,18 +261,15 @@ MARCA crea pedido → SISTEMA filtra talleres → SISTEMA rankea → MARCA ve li
 |-------------|----------|
 | REGISTRACIÓN | B3 (Formalización) - Baja barrera de entrada |
 | ENCONTRAR | B4 (Falta de clientes) |
-| ACORDAR | B2 (Desconfianza) |
-| COMPLIANCE | B3 (Formalización) |
-| FISCALIZAR | B5 (Estado ausente) |
 | APRENDER | B6 (Bajas capacidades) |
+| ACOMPAÑAR | B3 (Formalización) |
+| FISCALIZAR | B5 (Estado ausente) |
 
 ### Nota sobre PAGAR
 
-En el MVP, PAGAR funciona como **placeholder**:
-- Marca y taller registran manualmente que el pago se realizó
-- No hay integración con Mercado Pago
-- El historial queda registrado en el sistema
-- En Fase 1 se integra escrow automático
+PAGAR queda **fuera del alcance del MVP**. Los pagos entre marcas y talleres se gestionan por fuera de la plataforma (transferencia bancaria, Mercado Pago directo, efectivo, etc.). La plataforma no interviene en el circuito de pagos durante esta etapa.
+
+En Fase 1 se evaluará integrar escrow automático con Mercado Pago y liberación por hitos.
 
 ---
 
